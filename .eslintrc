@@ -1,0 +1,25 @@
+{
+  "env": {
+    "jest": true
+  },
+  "parser": "babel-eslint",
+  "plugins": [
+    "flowtype"
+  ],
+  "extends": [
+    "plugin:flowtype/recommended",
+    "solarfrii-react"
+  ],
+  "settings": {
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": true
+    }
+  },
+  "rules": {
+    "react/forbid-prop-types": ["error", {
+      "forbid": ["any"],
+      "checkContextTypes": true,
+      "checkChildContextTypes": true
+    }]
+  }
+}

@@ -1,0 +1,11 @@
+[ignore]
+.*/node_modules/.*
+
+[include]
+./src
+
+[libs]
+./flow-typed/
+
+[version]
+^0.73.0
